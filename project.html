@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <nav>
+        <div class="empty-layout"></div>
+        <div class="nav-links">
+            <a href="/index.html">A PROPOS</a>
+            <a href="">PROJETS</a>
+            <a href="">COMPETENCES</a>
+            <a href="">CONTACT</a>
+        </div>
+        <div class="button">
+            <button>CV</button>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container-img">
+            <img src="" alt="" class="project-img">
+        </div>
+        <div class="project-titles">
+            <div class="sub-projects-titles">
+                <h1>PROJETS</h1>
+                <div class="line"></div>
+                <h2 class="project-title" onmouseover="showImageProject('pendubdd')" onmouseout="hideImageProject()">jeu du pendu en C</h2>
+                <div class="line"></div>
+                <h2 class="project-title" onmouseover="showImageProject('puissance4')" onmouseout="hideImageProject()">puissance 4</h2>
+                <div class="line"></div>
+                <h2 class="project-title" onmouseover="showImageProject('librairy-manager')" onmouseout="hideImageProject()">Librairy manager</h2>
+                <div class="line"></div>
+                <h2 class="project-title" onmouseover="showImageProject('rpg')" onmouseout="hideImageProject()">le grand duel</h2>
+                <div class="line"></div>
+                <h2 class="project-title" onmouseover="showImageProject('to-do-list')" onmouseout="hideImageProject()">to do list</h2>
+                <div class="line"></div>
+                <h2 class="project-title" onmouseover="showImageProject('pendubdd')" onmouseout="hideImageProject()">jeu du pendu sur le web</h2>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function showImageProject(project) {
+            let imagePath = "images/" + project + ".png";
+            let img = document.querySelector(".project-img");
+            img.src = imagePath;
+            img.classList.add("visible");
+        }
+
+        function hideImageProject() {
+            let img = document.querySelector(".project-img");
+            img.classList.remove("visible");
+        }
+
+        const projectTitles = document.querySelectorAll('.project-title');
+        projectTitles.forEach(title => {
+            title.addEventListener('mouseover', function() {
+                this.classList.add('hovered');
+            });
+            title.addEventListener('mouseout', function() {
+                this.classList.remove('hovered');
+            });
+        });
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,54 @@
+:root {
+    --couleur-fond: #e4e2ee;
+    --couleur-secondaire: #606887;
+    --couleur-secondaire-light: #6068877a;
+}
+
+main{
+    margin-top: 100px;
+    display: flex;
+}
+
+main div {
+    width: 50%;
+}
+
+.project-titles {
+    font-size: 1.3rem;
+    margin-left: 50px;
+}
+
+.project-title {
+    transition: margin-left 0.3s ease; /* Ajout de la transition */
+}
+
+
+.project-title.hovered {
+    margin-left: 20px; /* Vous pouvez ajuster la valeur du décalage selon vos préférences */
+}
+
+.line {
+    margin: 20px 0;
+    height: 1px;
+    background-color: var(--couleur-secondaire);
+    width: 100%;
+}
+
+.container-img {
+    position: relative;
+}
+
+.project-img {
+    opacity: 0; /* Par défaut, l'image est invisible */
+    transition: opacity 0.5s ease; /* Ajout de la transition */  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.project-img.visible {
+    opacity: 1; /* L'image devient visible */
+}

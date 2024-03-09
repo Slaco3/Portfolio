@@ -1,0 +1,179 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --couleur-fond: #e4e2ee;
+    --couleur-secondaire: #606887;
+    --couleur-secondaire-light: #6068877a;
+}
+
+body {
+  background-color: var(--couleur-fond);
+  color:var(--couleur-secondaire);
+  
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.empty-layout, div.nav-links, div.button {
+  width: 100%;
+}
+
+div.nav-links {
+  display: flex;
+  justify-content: center;
+}
+
+div.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  margin-right: 80px;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.3rem; 
+}
+
+nav a::after {
+  content: "";
+  display: none;
+  background-color: var(--couleur-secondaire);
+  height: 1px;
+}
+
+  nav a:hover::after {
+    display: block;
+}
+
+nav button {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  color: var(--couleur-fond);
+  background-color: var(--couleur-secondaire);
+  padding: 5px 40px ;
+  border: none;
+
+} 
+
+.presentation {
+  background-color: blue;
+  height: 550px;
+  background: url(images/cover_overlay.png) no-repeat center/100% 100%,url(images/cover.jpg) no-repeat center/cover;
+  position: relative;
+}
+
+
+.container-photo-nom {
+  color: var(--couleur-fond);
+  text-align: center;
+  padding-top: 50px;
+}
+
+.container-photo-nom h1 {
+  font-size: 3.5rem;
+  margin: 20px ;
+}
+
+.container-photo-nom p {
+  font-size: 2rem;
+  margin: 20px ;
+}
+
+.container-photo-nom a {
+  border: solid 2px var(--couleur-fond);
+  color: var(--couleur-fond);
+  text-decoration: none;
+  display: inline-block;
+  margin: 15px;
+  padding: 10px;
+}
+
+.photo-profil {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background: url(images/photo-profil.jpg) center/ cover;
+  border-radius: 50%;
+  border:solid 2px  var(--couleur-fond);
+}
+
+.horizontal-bar {
+  height: 2px;
+  width: 15%;
+  background-color: var(--couleur-secondaire-light);
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.contact {
+  position: absolute;
+  left: 30px;
+  top:40px;
+  color: var(--couleur-fond);
+  font-size: 1.3rem;
+  display: flex;
+}
+
+.contact p:nth-child(2) {
+  margin-top: 10px;
+}
+
+.vertical-bar {
+  width: 3px;
+  background-color: var(--couleur-fond);
+  margin-right: 10px;
+}
+
+.introduction-paragraph {
+  width: 70%;
+  margin: 80px auto;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.weihgt {
+  font-weight: 900;
+}
+
+
+
+/* ------------- SOFT SKILLS ------------- */
+
+.soft-skills {
+  max-width: 1500px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.soft-skills div {
+  background-color: var(--couleur-secondaire);
+  color: var(--couleur-fond);
+  width: 100%;
+  margin: 8px;
+  padding: 100px 10px;
+  border-radius: 10px;
+}
+
+.soft-skills  h2 {
+  margin-top: 20px;
+}
+
+
+
