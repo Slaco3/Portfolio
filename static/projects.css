@@ -1,0 +1,56 @@
+/* ----- PAGE GLOBALE ----- */
+main{
+    margin-top: 100px;
+    display: flex;
+}
+
+main div {
+    width: 50%;
+}
+
+
+
+/* ----- COTE GAUCHE : IMAGE-PROJETS ----- */
+
+.container-img {
+    position: relative;
+}
+
+.project-img {
+    opacity: 0; /* Par défaut, l'image est invisible */
+    transition: opacity 0.5s ease; /* Ajout de la transition */  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.project-img.visible {
+    opacity: 1; /* L'image devient visible */
+}
+
+
+
+/* ----- COTE DROIT : NOMS-PROJETS ----- */
+
+.project-titles {
+    font-size: 1.3rem;
+    margin-left: 50px;
+}
+
+.project-title {
+    transition: margin-left 0.3s ease;
+}
+
+.project-title.hovered {
+    margin-left: 20px; 
+}
+
+.line {
+    margin: 20px 0;
+    height: 1px;
+    background-color: var(--couleur-secondaire);
+    width: 100%;
+}

@@ -1,0 +1,113 @@
+/* ----- SECTION PRESENTATION ----- */
+
+.presentation {
+background-color: blue;
+height: 550px;
+background: url(../images/cover_overlay.png) no-repeat center/100% 100%,url(../images/cover.jpg) no-repeat center/cover;
+position: relative;
+}
+
+
+.container-photo-nom {
+color: var(--couleur-fond);
+text-align: center;
+padding-top: 50px;
+}
+
+.photo-profil {
+width: 200px;
+height: 200px;
+margin: auto;
+background: url(../images/photo-profil.jpg) center/ cover;
+border-radius: 50%;
+border:solid 2px  var(--couleur-fond);
+}
+
+.container-photo-nom h1 {
+font-size: 3.5rem;
+margin: 20px ;
+}
+
+.container-photo-nom p {
+font-size: 2rem;
+margin: 20px ;
+}
+
+.container-photo-nom a {
+border: solid 2px var(--couleur-fond);
+color: var(--couleur-fond);
+text-decoration: none;
+display: inline-block;
+margin: 15px;
+padding: 10px;
+}
+
+
+
+/* ----- SECTION CONTACT MAIL + TEL ----- */
+
+.contact {
+position: absolute;
+left: 30px;
+top:40px;
+color: var(--couleur-fond);
+font-size: 1.3rem;
+display: flex;
+}
+
+.contact p:nth-child(2) {
+margin-top: 10px;
+}
+
+.vertical-bar {
+width: 3px;
+background-color: var(--couleur-fond);
+margin-right: 10px;
+}
+
+
+
+/* ----- SECTION PARAGRAPHE PRESENTATION ----- */
+
+.horizontal-bar {
+height: 2px;
+width: 15%;
+background-color: var(--couleur-secondaire-light);
+margin-top: 100px;
+margin-left: 200px;
+}
+
+.introduction-paragraph {
+width: 70%;
+margin: 80px auto;
+font-size: 1.8rem;
+text-align: center;
+}
+
+.weihgt {
+font-weight: 900;
+}
+
+
+/* ------------- SECTION SOFT SKILLS ------------- */
+
+.soft-skills {
+max-width: 1000px;
+margin: 100px auto;
+display: flex;
+justify-content: center;
+text-align: center;
+}
+
+.soft-skills div {
+background-color: var(--couleur-secondaire);
+color: var(--couleur-fond);
+width: 100%;
+margin: 8px;
+padding: 100px 10px;
+border-radius: 10px;
+}
+
+.soft-skills h2 {
+margin-top: 20px;
+}

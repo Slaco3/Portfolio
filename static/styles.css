@@ -1,0 +1,84 @@
+/* ---- SETUP DE BASE ---- */
+
+:root {
+    --couleur-fond: #e4e2ee;
+    --couleur-secondaire: #606887;
+    --couleur-secondaire-light: #606887e8;
+}
+
+body {
+  background-color: var(--couleur-fond);
+  color:var(--couleur-secondaire);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* ---- BARRE DE NAVIGATION ---- */
+
+nav {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-empty-layout, .nav-links, .nav-button {
+  /* width: 100%; */
+  flex: 1
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-button button {
+  margin-right: 60px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  color: var(--couleur-fond);
+  background-color: var(--couleur-secondaire);
+  padding: 5px 40px ;
+  border: none;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.2rem; 
+}
+
+.nav-links a::after {
+  content: "";
+  display: none;
+  background-color: var(--couleur-secondaire-light);
+  height: 1px;
+}
+
+.nav-links a:hover {
+  color: var(--couleur-secondaire-light);
+}
+
+.nav-links a:hover::after {
+  display: block;
+}
+
+
+
+
+
+
