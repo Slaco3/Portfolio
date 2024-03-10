@@ -1,0 +1,55 @@
+.card {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: var(--couleur-secondaire);
+    border-radius: 10px;
+    color: var(--couleur-fond);
+    padding: 50px 80px 20px;
+}
+
+.card h1 {
+    text-align: center;
+}
+
+form {
+    margin: 30px auto;
+}
+
+
+label, input {
+    display: block;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px 20px;
+}
+
+label {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.name-subject {
+    display: flex;
+}
+
+.name-subject div {
+    flex: 1;
+    margin-right: 10px   
+}
+
+.name-subject div:last-child {
+    margin-right: 0;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+}

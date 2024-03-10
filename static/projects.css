@@ -14,6 +14,8 @@ main div {
 
 .container-img {
     position: relative;
+    width: 80%;
+    height: 500px;
 }
 
 .project-img {

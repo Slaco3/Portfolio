@@ -46,14 +46,20 @@ nav {
   justify-content: flex-end;
 }
 
-.nav-button button {
+.nav-button a {
   margin-right: 60px;
   font-size: 1.5rem;
   border-radius: 5px;
   color: var(--couleur-fond);
   background-color: var(--couleur-secondaire);
-  padding: 5px 40px ;
+  padding: 2px 15px 2px 5px ;
   border: none;
+  display: flex;
+  text-decoration: none;
+}
+
+.svg-download {
+  width: 30px;
 }
 
 .nav-links a {

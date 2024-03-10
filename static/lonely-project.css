@@ -1,0 +1,50 @@
+main{
+    margin-top: 100px;
+    display: flex;
+}
+
+main div {
+    width: 50%;
+}
+
+
+.container-img {
+    position: relative;
+    width: 80%;
+    height: 500px;
+}
+
+.project-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+.container-txt {
+    margin-top: 30px;
+    width: 60%;
+}
+
+.container-txt h1 {
+    margin-bottom: 20px;
+}
+
+.container-txt p {
+    padding: 15px 0;
+
+}
+
+.container-txt .separator {
+    width: 30%;
+    height: 1px;
+    background-color: var(--couleur-secondaire);
+}
+
+
+
+
+
