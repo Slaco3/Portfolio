@@ -27,6 +27,7 @@ main div {
     object-fit: cover;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
 }
 
 .project-img.visible {
@@ -48,11 +49,22 @@ main div {
 }
 
 .project-title {
+    display: block;
     transition: margin-left 0.3s ease;
     padding: 10px 0;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--couleur-secondaire);
+    
+}
+
+.project-title:hover{
+    color: var(--couleur-secondaire-very-light)
 }
 
 .project-title.hovered {
     margin-left: 20px; 
 }
+
+
 

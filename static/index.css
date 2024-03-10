@@ -42,6 +42,15 @@ margin: 15px;
 padding: 10px;
 }
 
+.button-contact {
+   border-radius: 5px;
+}
+
+.button-contact:hover {
+    background-color: var(--couleur-fond);
+    color: var(--couleur-secondaire);
+}
+
 
 
 /* ----- SECTION CONTACT MAIL + TEL ----- */
@@ -97,15 +106,20 @@ margin: 100px auto;
 display: flex;
 justify-content: center;
 text-align: center;
+
 }
 
 .soft-skills div {
-background-color: var(--couleur-secondaire);
-color: var(--couleur-fond);
-width: 100%;
-margin: 8px;
-padding: 100px 10px;
-border-radius: 10px;
+    background-color: var(--couleur-secondaire);
+    color: var(--couleur-fond);
+    width: 100%;
+    margin: 8px;
+    padding: 100px 10px;
+    border-radius: 10px;
+}
+
+.soft-skills div:hover {
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
 }
 
 .soft-skills h2 {

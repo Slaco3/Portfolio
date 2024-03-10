@@ -21,12 +21,14 @@ main div {
     object-fit: cover;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
 }
 
 
 .container-txt {
     margin-top: 30px;
     width: 60%;
+
 }
 
 .container-txt h1 {
@@ -44,6 +46,23 @@ main div {
     background-color: var(--couleur-secondaire);
 }
 
+.btn-github {
+    background-color: var(--couleur-secondaire);
+    color: var(--couleur-fond);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.btn-github:hover {
+    border: 1px solid var(--couleur-secondaire);
+    background-color: var(--couleur-fond);
+    color: var(--couleur-secondaire);
+}
 
 
 
