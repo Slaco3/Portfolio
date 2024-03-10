@@ -64,10 +64,35 @@ main div {
     color: var(--couleur-secondaire);
 }
 
+
+@media screen and (max-width: 1000px) {
+    main {
+         flex-direction: column;
+         margin-top: 10px;
+    }
+
+    main > div {
+        width: 100%;
+    }
+
+    .container-img {
+        width: 100%;
+    }
+
+    .container-txt {
+        margin: 35px auto;
+
+    }
+}
+
 @media screen and (max-width: 572px) {
 
     .nav-empty-layout {
         margin-top: 45px;
+    }
+
+    main {
+        margin-top: 140px;
     }
 }
 
@@ -76,6 +101,7 @@ main div {
         margin-top: 95px;
     }
 }
+
 
 
 
