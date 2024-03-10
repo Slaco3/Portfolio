@@ -20,7 +20,7 @@ height: 200px;
 margin: auto;
 background: url(../images/photo-profil.jpg) center/ cover;
 border-radius: 50%;
-border:solid 2px  var(--couleur-fond);
+border:solid 3px var(--couleur-fond);
 }
 
 .container-photo-nom h1 {
@@ -106,15 +106,15 @@ margin: 100px auto;
 display: flex;
 justify-content: center;
 text-align: center;
-
+flex-wrap: wrap;
 }
 
 .soft-skills div {
     background-color: var(--couleur-secondaire);
     color: var(--couleur-fond);
-    width: 100%;
+    width: 200px;
     margin: 8px;
-    padding: 100px 10px;
+    padding: 50px 10px;
     border-radius: 10px;
 }
 
@@ -124,4 +124,60 @@ text-align: center;
 
 .soft-skills h2 {
 margin-top: 20px;
+}
+
+@media screen and (max-width: 1448px) {
+    :root {
+        font-size: 0.8rem
+    }
+}
+
+@media screen and (max-width: 1178px) {
+    .presentation {
+        background: url(../images/cover.jpg) no-repeat center/cover;
+
+    }
+    .horizontal-bar {
+        margin: auto;
+        margin-top: 50px;
+    }
+
+}
+
+@media screen and (max-width: 872px) {
+    .container-photo-nom {
+        padding-top: 110px;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .presentation {
+        margin-top: 90px;
+    }
+
+    .nav-empty-layout {
+        margin-top: 45px;
+    }
+
+    .introduction-paragraph {
+        font-size: 1.3rem;
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width : 478px) {
+    .presentation {
+        margin-top: 130px;    
+    }
+
+    .nav-empty-layout {
+        margin-top: 95px;
+    }
+
+    .photo-profil {
+        width: 150px;
+        height: 150px;
+        }
+
 }

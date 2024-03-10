@@ -27,6 +27,7 @@ label, input {
 input, textarea{
     width: 100%;
     padding: 10px 20px;
+    background-color: var(--couleur-fond);
 }
 
 label {
@@ -56,4 +57,17 @@ button {
 
 textarea {
     resize: vertical;
+}
+
+.btn-form {
+    background-color: var(--couleur-fond);
+    border: none;
+    border-radius: 5px;
+    color: var(--couleur-secondaire);
+}
+
+.btn-form:hover {
+    border: 1px solid var(--couleur-fond);
+    background-color: var(--couleur-secondaire);
+    color: var(--couleur-fond);
 }

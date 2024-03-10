@@ -43,6 +43,10 @@ main div {
     margin-left: 50px;
 }
 
+h1 {
+    margin-bottom: 10px;
+}
+
 .container-project-title {
     border-top: solid 1px var(--couleur-secondaire);
     width: 100%;

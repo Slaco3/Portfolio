@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/styles.css">
     <link rel="stylesheet" href="static/contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>CONTACT</title>
 </head>
 <body>
     <nav>
-        <div class="nav-empty-layout"></div>
+        <div class="nav-empty-layout">
+            <img src="svg/mon-logo.svg" alt="">
+        </div>
         <div class="nav-links">
             <a href="index.html">ACCUEIL</a>
             <a href="project.html">PROJETS</a>
@@ -17,7 +24,10 @@
             <a href="contact.html">CONTACT</a>
         </div>
         <div class="nav-button">
-            <button>CV</button>
+            <a href="/CV.pdf" download="/CV.pdf" >
+                <img class="svg-download" src="svg/download.svg" alt="">
+                <span>CV</span>
+            </a>
         </div>
     </nav>
 
@@ -47,7 +57,7 @@
                         <textarea  id="message" cols="30" rows="10" name="message"></textarea>
                     </div>
     
-                    <button value="submit">Envoyer</button>
+                    <button class="btn-form" value="submit">Envoyer</button>
                 </form>
             </div>
         </div>
