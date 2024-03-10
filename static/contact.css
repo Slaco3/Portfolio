@@ -44,9 +44,6 @@ label {
     margin-right: 10px   
 }
 
-.name-subject div:last-child {
-    margin-right: 0;
-}
 
 button {
     display: block;
@@ -70,4 +67,34 @@ textarea {
     border: 1px solid var(--couleur-fond);
     background-color: var(--couleur-secondaire);
     color: var(--couleur-fond);
+}
+
+
+@media screen and (max-width: 572px) {
+
+    .nav-empty-layout {
+        margin-top: 45px;
+    }
+
+    .card {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width : 478px) {
+    .nav-empty-layout {
+        margin-top: 95px;
+    }
+
+    .card {
+        margin-top: 150px;
+    }
+
+    .name-subject {
+        flex-direction: column;
+    }
+
+    .name-subject div {
+        margin-right: 0px   
+    }
 }

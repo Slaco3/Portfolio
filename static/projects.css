@@ -72,3 +72,15 @@ h1 {
 
 
 
+@media screen and (max-width: 572px) {
+
+    .nav-empty-layout {
+        margin-top: 45px;
+    }
+}
+
+@media screen and (max-width : 478px) {
+    .nav-empty-layout {
+        margin-top: 95px;
+    }
+}
