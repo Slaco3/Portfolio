@@ -4,7 +4,7 @@ main{
     display: flex;
 }
 
-main div {
+main > div {
     width: 50%;
 }
 
@@ -52,6 +52,10 @@ h1 {
     width: 100%;
 }
 
+.sub-container-projects-titles {
+    width: 50%;
+}
+
 .project-title {
     display: block;
     transition: margin-left 0.3s ease;
@@ -72,7 +76,35 @@ h1 {
 
 
 
+@media screen and (max-width: 1238px) {
+    .sub-container-projects-titles {
+        width: 350px;
+    }
+    .container-project-titles {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+   main {
+        flex-direction: column;
+        align-items: center;
+   }
+
+   main > div:first-child {
+    display: none;
+   }
+}
+
 @media screen and (max-width: 572px) {
+
+    .sub-container-projects-titles {
+        width: 250px;
+    }
+    
+    .project-title {
+        font-size: 1rem;
+    }
 
     .nav-empty-layout {
         margin-top: 45px;
@@ -83,4 +115,16 @@ h1 {
     .nav-empty-layout {
         margin-top: 95px;
     }
+
+    main {
+        margin-top: 150px;
+        align-items: flex-start;
+    }
+
+    .sub-container-projects-titles {
+        margin-left: 50px;
+    }
+
+
 }
+

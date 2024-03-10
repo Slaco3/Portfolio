@@ -164,6 +164,10 @@ margin-top: 20px;
         margin-top: 30px;
     }
 
+    .photo-profil {
+        width: 150px;
+        height: 150px;
+        }
 }
 
 @media screen and (max-width : 478px) {
@@ -174,10 +178,4 @@ margin-top: 20px;
     .nav-empty-layout {
         margin-top: 95px;
     }
-
-    .photo-profil {
-        width: 150px;
-        height: 150px;
-        }
-
 }

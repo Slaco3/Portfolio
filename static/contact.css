@@ -40,8 +40,7 @@ label {
 }
 
 .name-subject div {
-    flex: 1;
-    margin-right: 10px   
+    flex: 1;  
 }
 
 
@@ -95,6 +94,6 @@ textarea {
     }
 
     .name-subject div {
-        margin-right: 0px   
+        /* margin-right: 0px    */
     }
 }
