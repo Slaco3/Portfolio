@@ -1,0 +1,73 @@
+.presentation-text {
+    margin-top: 50px;
+    margin-left: 150px;
+    max-width: 600px;
+    padding: 60px;
+    
+}
+
+.presentation-text h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.presentation-text div {
+    border-bottom: solid 1px var( --couleur-secondaire) ;
+    border-right: solid 1px var( --couleur-secondaire) ;
+    padding: 25px;
+    
+}
+
+.presentation-text p:nth-child(2) {
+    margin-top: 15px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    margin: 25px auto;
+}
+
+.skill-card {
+    color: var(--couleur-fond);
+    background-color: var(--couleur-secondaire-light);
+    width: 200px;
+    height: 220px;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.skill-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    font-size: 0.9rem;
+}
+
+
+@media screen and (max-width: 1385px) {
+    .presentation-text {
+        margin: 70px auto 0;
+    }
+}
+
+@media screen and (max-width: 572px) {
+    .nav-empty-layout {
+        margin-top: 45px;
+    }
+}
+
+@media screen and (max-width : 478px) {
+    .nav-empty-layout {
+        margin-top: 95px;
+    }
+}
