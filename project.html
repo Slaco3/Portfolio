@@ -64,18 +64,21 @@
     </main>
 
     <script>
-        function showImageProject(project) {
-            let imagePath = "images/" + project + ".png";
-            let img = document.querySelector(".project-img");
-            img.src = imagePath;
-            img.classList.add("visible");
+        // fonction qui permet d'affiche la bonne image dans la balise img et qui rend visible l'image visible !
+        function showImageProject(project) {                  
+            let imagePath = "images/" + project + ".png";   // on concatène le chemin complet vers l'image que l'on veut
+            let img = document.querySelector(".project-img");    // on sélectionne l'objet du DOM qui a la class ".projet-img" => ici notre balise img
+            img.src = imagePath;                                    // on donne a cette balise la bonne valeur pour son attribut src
+            img.classList.add("visible");                         // on ajoute la classe visible à la balise img pour la rendre visible
         }
 
+         // fonction qui rend l'image invisible
         function hideImageProject() {
             let img = document.querySelector(".project-img");
             img.classList.remove("visible");
         }
 
+        // ici on itère sur chaque titre de projet pour ajouter un écouteur d'evenement pur chacun => au survol d'un titre on ajoute la classe "hovered" au titre ce qui rend possible l'animation de décalage vers la gauche
         const projectTitles = document.querySelectorAll('.project-title');
         projectTitles.forEach(title => {
             title.addEventListener('mouseover', function() {
