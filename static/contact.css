@@ -43,6 +43,10 @@ label {
     flex: 1;  
 }
 
+.name-subject div:nth-child(1) {
+    margin-right: 10px;
+}
+
 
 button {
     display: block;
@@ -84,16 +88,16 @@ textarea {
     .nav-empty-layout {
         margin-top: 95px;
     }
-
+    
     .card {
         margin-top: 150px;
     }
-
+    
     .name-subject {
         flex-direction: column;
     }
-
-    .name-subject div {
-        /* margin-right: 0px    */
-    }
+    
+    .name-subject div:nth-child(1) {
+        margin-right: 0px;
+    }    
 }
